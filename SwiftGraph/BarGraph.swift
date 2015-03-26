@@ -38,18 +38,18 @@ public class BarGraph: UIView {
             var barLayer = BarLayer()
             barLayer.CreateLayer((pixelValues.objectAtIndex(count) as CGFloat), color: (colors.objectAtIndex(count) as CGColor), location: CGPoint(x: xValue, y: frame.height))
             barLayers.addObject(barLayer)
-            xValue += 100.0
-            count++
+            
             var label = CATextLayer()
             label.font = "Helvetica-Bold"
             label.fontSize = 12
-            label.frame = CGRect(x: xValue, y: (frame.height - (pixelValues.objectAtIndex(count) as CGFloat) - 20), width: 50, height: 20)
+            label.frame = CGRect(x: (xValue - 10) + (barLayer.frame.width / 2 - 15), y: (frame.height - (pixelValues.objectAtIndex(count) as CGFloat) - 20), width: 50, height: 20)
             var intPercentage = Int(actualValue)
             label.string = NSString(format: "%d", intPercentage)
             label.alignmentMode = kCAAlignmentCenter
-            label.foregroundColor = UIColor.whiteColor().CGColor
+            label.foregroundColor = UIColor.blackColor().CGColor
             textArray.addObject(label)
-            
+            xValue += 100.0
+            count++
         }
         setNeedsDisplay()
     }
