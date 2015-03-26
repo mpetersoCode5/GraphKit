@@ -9,10 +9,10 @@
 import UIKit
 
 public class BarLayer: CALayer {
-    public func CreateLayer(height : CGFloat, color : CGColor, location : CGPoint)
+    public func CreateLayer(height : CGFloat, width : CGFloat, color : CGColor, location : CGPoint)
     {
         backgroundColor = color
-        frame = CGRectMake(location.x, location.y, 75, -height)
+        frame = CGRectMake(location.x, location.y, width, -height)
         shadowOffset = CGSizeMake(0, 3)
         shadowRadius = 5.0
         shadowColor = UIColor.blackColor().CGColor
