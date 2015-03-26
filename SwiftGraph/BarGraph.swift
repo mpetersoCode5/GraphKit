@@ -51,13 +51,35 @@ public class BarGraph: UIView {
             textArray.addObject(label)
             
         }
-        
+        setNeedsDisplay()
     }
     
     // Only override drawRect: if you perform custom drawing.
     // An empty implementation adversely affects performance during animation.
     public override func drawRect(rect: CGRect) {
-        // Drawing code
+        if let lay = self.layer.sublayers
+        {
+            self.layer.sublayers.removeAll(keepCapacity: false)
+        }
+        
+        var maskLayer = CAShapeLayer()
+        maskLayer.frame = rect
+        maskLayer.backgroundColor = UIColor.whiteColor().CGColor
+        maskLayer.opacity = 0.0;
+        self.layer.addSublayer(maskLayer)
+        
+        for temp in barLayers
+        {
+            var bLayer = temp as BarLayer
+            self.layer.addSublayer(bLayer)
+        }
+        
+        for temp in textArray
+        {
+            var bLayer = temp as CATextLayer
+            self.layer.addSublayer(bLayer)
+        }
+
     }
 
 
