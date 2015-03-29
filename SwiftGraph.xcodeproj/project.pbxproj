@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		B477A7FE1AC740F900B11FC3 /* BarGraphScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = B477A7FD1AC740F900B11FC3 /* BarGraphScene.swift */; };
 		B477A8001AC7411700B11FC3 /* SceneKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B477A7FF1AC7411700B11FC3 /* SceneKit.framework */; };
+		B47E1A1D1AC85D3B00C688A4 /* BarGraphView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B47E1A1C1AC85D3B00C688A4 /* BarGraphView.swift */; };
 		B490A0B21AC370E30007E274 /* SwiftGraph.h in Headers */ = {isa = PBXBuildFile; fileRef = B490A0B11AC370E30007E274 /* SwiftGraph.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		B490A0B81AC370E30007E274 /* SwiftGraph.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B490A0AC1AC370E30007E274 /* SwiftGraph.framework */; };
 		B490A0BF1AC370E30007E274 /* SwiftGraphTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B490A0BE1AC370E30007E274 /* SwiftGraphTests.swift */; };
@@ -29,6 +30,7 @@
 /* Begin PBXFileReference section */
 		B477A7FD1AC740F900B11FC3 /* BarGraphScene.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BarGraphScene.swift; sourceTree = "<group>"; };
 		B477A7FF1AC7411700B11FC3 /* SceneKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SceneKit.framework; path = System/Library/Frameworks/SceneKit.framework; sourceTree = SDKROOT; };
+		B47E1A1C1AC85D3B00C688A4 /* BarGraphView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BarGraphView.swift; sourceTree = "<group>"; };
 		B490A0AC1AC370E30007E274 /* SwiftGraph.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SwiftGraph.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B490A0B01AC370E30007E274 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B490A0B11AC370E30007E274 /* SwiftGraph.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SwiftGraph.h; sourceTree = "<group>"; };
@@ -102,6 +104,7 @@
 				B477A7FC1AC73F6800B11FC3 /* 3D Bar Graph */,
 				B477A7FB1AC73F5000B11FC3 /* 2D Bar Graph */,
 				B490A0AF1AC370E30007E274 /* Supporting Files */,
+				B47E1A1C1AC85D3B00C688A4 /* BarGraphView.swift */,
 			);
 			path = SwiftGraph;
 			sourceTree = "<group>";
@@ -241,6 +244,7 @@
 				B490A0FB1AC376A60007E274 /* BarGraph.swift in Sources */,
 				B477A7FE1AC740F900B11FC3 /* BarGraphScene.swift in Sources */,
 				B490A0C91AC371310007E274 /* BarLayer.swift in Sources */,
+				B47E1A1D1AC85D3B00C688A4 /* BarGraphView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
